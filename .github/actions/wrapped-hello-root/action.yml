@@ -1,0 +1,6 @@
+name: 'Wrapped Hello Root'
+description: 'Calls hello-root from test-gh-actions to test action-to-action cross-repo references'
+runs:
+  using: 'composite'
+  steps:
+    - uses: vandah/test-gh-actions/.github/actions/hello-root@main

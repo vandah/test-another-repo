@@ -1,0 +1,6 @@
+name: 'Wrapped Hello Local'
+description: 'Calls hello-local from test-gh-actions to test action-to-action cross-repo references'
+runs:
+  using: 'composite'
+  steps:
+    - uses: vandah/test-gh-actions/.github/actions/hello-local@main
