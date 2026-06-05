@@ -1,0 +1,15 @@
+name: Test External Actions
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run action with local script
+        uses: vandah/test-gh-actions/.github/actions/hello-local@main
+
+      - name: Run action with root script
+        uses: vandah/test-gh-actions/.github/actions/hello-root@main
